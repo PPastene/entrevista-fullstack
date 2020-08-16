@@ -7,8 +7,8 @@ function findOutlier(integers) {
     // Verificacion de que el arreglo tenga 3 elementos minimo
     if(integers.length < 3) { return false }
 
-    var pares = []
-    var impares = []
+    const pares = []
+    const impares = []
 
     // Se compara cada elemento del arreglo
     // El numero se movera depeniendo si el resto de la division sea cero (par)
