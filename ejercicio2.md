@@ -1,5 +1,6 @@
 # Ejercicio 2 - Diseñando un sistema IoT
 El siguiente diagrama representa el conjunto de sistemas que funcionaría como solución al problema planteado por Capta Hydro. Dicho conjunto se compone de los siguientes servicios
+![image](https://raw.githubusercontent.com/PPastene/entrevista-fullstack/master/images/diagrama.png)
 - CFT y CFC: Son la Estación de telemetría y el Automatizador de Compuerta.
 - Servidor API REST Telemetría: Servidor que recibe los datos capturados desde la Estación de telemetría y el estado de la compuerta en el Automatizador de Compuerta, envía datos al servidor de API REST Historicos para el guardado de datos y publica en un websocket los datos y alertas para ser consumidos por la Aplicación Web, por el mismo websocket recibe instrucciones desde la Aplicación Web para controlar el Automatizador de Compuerta.
 - Servidor API REST Historicos: Servidor que recibe y envía los datos de la API REST Telemetria a la base de datos, como también generar la información obtenida de la base de datos para ser enviada a la Aplicación Movil.
